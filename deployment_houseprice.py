@@ -14,7 +14,7 @@ import os
 
 def dudoan(param):  
     # load mô hình
-    filename=os.getcwd()+'\\model_house.sav'
+    filename=os.getcwd()+'model_house.sav'
     st.write(filename)
     loaded_model = pickle.load(open(filename,'rb')) 
     y_pred=loaded_model.predict(param)
